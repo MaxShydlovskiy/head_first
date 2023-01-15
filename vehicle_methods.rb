@@ -1,19 +1,65 @@
-def accelerate
-  puts "Stepping on the gas"
-  puts "Speeding up"
+class Car
+
+  attr_accessor :odometer
+  attr_accessor :gas_used
+
+  def mileage
+    @odometer / @gas_used
+  end
+
+  def accelerate
+    puts "Floor it!"
+  end
+
+  def sound_horn
+    puts "Beep! Beep!"
+  end
+
+  def steer
+    puts "Turn front 2 wheels."
+  end
 end
 
-def sound_horn
-  puts "Pressing the horn button"
-  puts "Beep beep!"
+
+class Truck
+
+  attr_accessor :odometer
+  attr_accessor :gas_used
+
+  def mileage
+    @odometer / @gas_used
+  end
+
+  def accelerate
+    puts "Floor it!"
+  end
+
+  def sound_horn
+    puts "Beep! Beep!"
+  end
+  def steer
+    puts "Turn front 2 wheels."
+  end
 end
 
-def use_headlights(brightness = "low-beam")
-  puts "Turning on #{brightness} headlights"
-  puts "Watch out for deer!"
-end
+class Motorcycle
 
-sound_horn
-accelerate
-use_headlights
-use_headlights("high-beam")
+  attr_accessor :odometer
+  attr_accessor :gas_used
+
+  def mileage
+    @odometer / @gas_used
+  end
+
+  def accelerate
+    puts "Floor it!"
+  end
+
+  def sound_horn
+    puts "Beep! Beep!"
+  end
+
+  def steer
+    puts "Turn front 2 wheels."
+  end
+end
