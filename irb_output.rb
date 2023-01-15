@@ -1,3 +1,5 @@
+# Chapter 1
+
 puts "First line\nSecond line\nThird line"
 # First line
 # Second line
@@ -28,3 +30,7 @@ puts rand(100)   # 1-100, but without 100
 # 23
 #  => nil
 rand(100) + 1  # 1-100, include 100
+
+
+# Chapter 2
+
